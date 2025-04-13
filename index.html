@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanzania Agricultural Decision Support System</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Tanzania Agricultural Decision Support System</h1>
+    <nav>
+      <button id="login-btn">Login</button>
+      <button id="logout-btn" style="display: none;">Logout</button>
+      <span id="user-info"></span>
+    </nav>
+  </header>
+  <main>
+    <div id="dashboard">
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+        <p><strong>Maize</strong>: Weekly irrigation of 30mm during growing season, apply DAP fertilizer.</p>
+        <p><strong>Expected Yield:</strong> 3.5 - 4.0 tons per hectare</p>
+      </section>
+      <section id="map">
+        <h2>Map</h2>
+        <div id="map-container"></div>
+      </section>
+      <section id="crop-info">
+        <h2>Available Crops</h2>
+        <ul>
+          <li><strong>Maize:</strong> Water Requirement: 500mm, Optimal Temp: 25-30°C</li>
+          <li><strong>Rice:</strong> Water Requirement: 1200mm, Optimal Temp: 27-32°C</li>
+          <li><strong>Beans:</strong> Water Requirement: 400mm, Optimal Temp: 20-25°C</li>
+          <!-- Add more crops as needed -->
+        </ul>
+      </section>
+    </div>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
